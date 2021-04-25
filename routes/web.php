@@ -10,6 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['prefix' => 'admin'], function() {
+      Route::get('news/create', 'Admin\Newscontroller@add');
+
+      //ここからはprofile
+      Route::get('profile/create', 'Admin\ProfileController@add');
+      Route::get('profile/edit', 'Admin\ProfileController@edit');
+});
 
 Route::get('/', function () {
     return view('welcome');
