@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-    <p>ブラジルの皆さん聞こえてますかーーーーーーーーーーー？！</p>
+    <p>ワイルドだろぅ！？</p>
         <hr color="#c0c0c0">
         @if (!is_null($headline))
             <div class="row">
