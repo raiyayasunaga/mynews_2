@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Profile;
+use App\HistoryProfile;
+use Carbon\Carbon;
 
 class ProfileController extends Controller
 {
@@ -64,7 +66,12 @@ class ProfileController extends Controller
 
     $profile->fill($profile_form)->save();
 
-    return redirect('admin/profile');
+    $history = new HistoryProfile;
+    $history->profile_id = $profile->id;
+    $history->edited_at = Carbon::now();
+    $history->save();
+
+    return redirect('admin/profile/');
     }
     public function delete(Request $request)
     {
