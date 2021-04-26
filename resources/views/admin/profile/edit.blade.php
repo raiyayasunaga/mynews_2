@@ -46,7 +46,7 @@
                     </div>
                     <input type="hidden" name="id" value="{{ $profile_form->id }}">
                     {{ csrf_field() }}
-                    <input type="submit" class="btn btn-primary" value="新規作成">
+                    <input type="submit" class="btn btn-primary" value="更新">
                 </form>
                 {{-- 以下を追記　--}}
                 <div class="row mt-5">
