@@ -49825,6 +49825,21 @@ var app = new Vue({
 
 /***/ }),
 
+/***/ "./resources/js/assets/jquery.js":
+/*!***************************************!*\
+  !*** ./resources/js/assets/jquery.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(function () {
+  $('#btn').on('click', function () {
+    alert("Hello jQuery!!");
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
   !*** ./resources/js/bootstrap.js ***!
@@ -49984,13 +49999,14 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/profile.scss ./resources/sass/front.scss ***!
-  \***************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/js/assets/jquery.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/profile.scss ./resources/sass/front.scss ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/aneiraiya/Desktop/techboost/mynews_2/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Users/aneiraiya/Desktop/techboost/mynews_2/resources/js/assets/jquery.js */"./resources/js/assets/jquery.js");
 __webpack_require__(/*! /Users/aneiraiya/Desktop/techboost/mynews_2/resources/sass/app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! /Users/aneiraiya/Desktop/techboost/mynews_2/resources/sass/admin.scss */"./resources/sass/admin.scss");
 __webpack_require__(/*! /Users/aneiraiya/Desktop/techboost/mynews_2/resources/sass/profile.scss */"./resources/sass/profile.scss");
