@@ -7,6 +7,10 @@ body {
   height: 82px;
 }
 
+h1 {
+  color: lightgreen;
+}
+
 .headline .caption {
   position: relative;
   width: 350px;
